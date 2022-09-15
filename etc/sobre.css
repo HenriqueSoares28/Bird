@@ -1,0 +1,246 @@
+
+/*
+------------------------------------------------------------------------
+                        ESQUEMA DE CORES:
+------------------------------------------------------------------------
+PRETO -> #212529;
+AMARELO -> #ffc115;
+BRANCO -> rgb(245, 244, 244);
+AZUL -> rgb(50, 84, 177);
+------------------------------------------------------------------------
+                        OPÇÕES DE FONTES:
+------------------------------------------------------------------------
+TÍTULOS -> font-family: 'Times New Roman', serif;
+SUBTÍTULOS E LEGENDAS -> font-family: 'Times New Roman', serif;
+BOTÕES, CLICÁVEIS, TEXTOS PEQUENOS -> 'Times New Roman', serif;
+------------------------------------------------------------------------
+*/
+
+/* GERAL */
+body,
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(245, 244, 244);
+}
+/* GERAL */
+/* NAVBAR */
+.navbar {
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(245, 244, 244);
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+	border-bottom: solid 1px rgba(223, 223, 223, 0.116);
+}
+
+.navbarMenu {
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.navbarLinks {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	gap: 25px;
+	margin-bottom: 0;
+}
+
+.navbarLinks a {
+	text-decoration: none;
+	color: inherit;
+	transition: 0.3s;
+}
+
+.navbarLinks a:hover {
+	color: slategray;
+}
+
+.navbarLogo {
+	outline: 1px solid black;
+}
+
+.navbarLinks li{
+    width: 120px;
+}
+
+.navbarCarteira {
+	position: absolute;
+	top: 25px;
+	right: 120px;
+}
+
+.navbarCarteira a{
+	text-decoration: none;
+	color: inherit;
+}
+
+#toggler,
+.navbar label {
+	display: none;
+}
+/* NAVBAR */
+.img{
+  background-color: rgb(245, 244, 244)!important;
+}
+
+.c{
+    background-color: rgb(245, 244, 244);
+    margin: 0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+body {
+    background-color: #673AB7;
+    font-family: 'Calibri', sans-serif !important
+}
+
+.card {
+      position: relative;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background-color: rgb(245, 244, 244);
+   background-clip: border-box;
+   border: 0px solid transparent;
+   border-radius: 0px;
+}
+
+.card-body {
+   -webkit-box-flex: 1;
+   -ms-flex: 1 1 auto;
+   flex: 1 1 auto;
+   padding: 1.25rem;
+}
+
+.card .card-title {
+   position: relative;
+   font-weight: 600;
+   margin-bottom: 10px;
+   color:rgb(245, 244, 244);
+}
+
+
+.table {
+   width: 100%;
+   max-width: 100%;
+   margin-bottom: 1rem;
+   background-color: rgb(245, 244, 244);
+}
+
+* {
+   outline: none;
+}
+
+.table th, .table thead th {
+   font-weight: 500;
+}
+
+
+.table thead th {
+   vertical-align: bottom;
+   border-bottom: 2px solid #fcfcfc;
+   background-color: rgb(231, 151, 151);
+   color:rgb(245, 244, 244);
+}
+
+
+.table th {
+   padding: 1rem;
+   vertical-align: top;
+}
+
+
+.table th, .table thead th {
+   font-weight: 500;
+}
+
+
+th {
+   text-align: inherit;
+   background-color:rgb(231, 151, 151);
+}
+
+.cf{
+    background-color: rgb(50, 84, 177);
+    color: rgb(245, 244, 244);
+    font-family: 'Times New Roman', serif;
+    text-align: justify;
+}
+/* FOOTER */
+.footer {
+	height: 40px;
+	z-index: 999;
+	display: flex;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: rgb(245, 244, 244);
+	background-color: rgb(231, 151, 151);
+	align-items: middle;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footer p {
+	margin: 8px 0px 4px 0px;
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+}
+/* FOOTER */
+
+
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 600px) {
+    /* NAVBAR */
+        .navbarMenu{
+            width: 100%;
+            text-align: center;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .navbarLinks{
+            margin: 0;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+        .navbar label{
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        #toggler:checked + .navbarMenu{
+            display: block;
+            line-height: 40px;
+            max-height: 1000%;
+        }
+    /* NAVBAR */
+    /* MAIN */
+
+    /* MAIN */
+    /* FOOTER */
+        .footer {
+            background-color: rgb(231, 151, 151);
+        }
+        .footer p{
+            font-size: 12px;
+        }
+    /* FOOTER */
+}
+/* RESPONSIVIDADE */

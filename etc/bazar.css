@@ -23,8 +23,13 @@ html{
     height: 100%;
     width: 100%;
     margin: 0;
-    background-color: rgb(245, 244, 244);
+    background-color: white;
 }
+
+section {
+    background-color: white;
+}
+
 /* GERAL */
 /* NAVBAR */
 .navbar {
@@ -92,7 +97,7 @@ html{
 }
 
 .c{
-    background-color: rgb(245, 244, 244);
+    background-color: white;
     margin-top: 0%;
     margin-left: 10%;
     margin-right: 10%;
@@ -109,7 +114,7 @@ html{
 }
 
 body {
-    background-color: rgb(245, 244, 244)
+    background-color: white;
 }
 
 .container {
@@ -204,7 +209,7 @@ body {
 }
 
 .row{
-    background-color: rgb(245, 244, 244);
+    background-color: white;
 }
 
 
@@ -306,7 +311,7 @@ h6{
         padding: 10px;
         margin: 0;
         float: right;
-        background-color: rgb(245, 244, 244);
+        background-color: white;
     }
     .card{
         width: 300px;
@@ -481,28 +486,29 @@ h6{
 
 
 .cf{
-    background-color: rgb(245, 244, 244);
+    background-color: white;
     font-family: 'Times New Roman', serif;
     text-align: justify;
 }
 /* FOOTER */
 .footer {
-    height: 40px;
-    z-index: 999;
-    display: flex;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: rgb(245, 244, 244);
-    background-color: rgb(231, 151, 151);
-    align-items: middle;
-    flex-direction: column;
-    justify-content: space-between;
+	height: 40px;
+	z-index: 999;
+	display: flex;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: rgb(245, 244, 244);
+	background-color: rgb(231, 151, 151);
+	align-items: middle;
+	flex-direction: column;
+	justify-content: space-between;
 }
+
 .footer p {
-    margin: 4px 0px 4px 0px;
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
+	margin: 8px 0px 4px 0px;
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
 }
 /* FOOTER */
 

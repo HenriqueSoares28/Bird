@@ -62,10 +62,6 @@ html {
 	color: slategray;
 }
 
-.navbarLogo {
-	outline: 1px solid black;
-}
-
 .navbarLinks li{
     width: 120px;
 }

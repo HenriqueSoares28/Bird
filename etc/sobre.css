@@ -1,3 +1,4 @@
+
 /*
 ------------------------------------------------------------------------
                         ESQUEMA DE CORES:
@@ -91,45 +92,84 @@ html{
     margin: 0;
 }
 
-.rounded-lg {
-    border-radius: 1rem !important;
-  }
-  
-  .text-small {
-    font-size: 0.9rem !important;
-  }
-  .pricing{
-      color:#fff;
-  }
-  
-  .custom-separator {
-    width: 5rem;
-    height: 6px;
-    border-radius: 1rem;
-  }
-  
-  .text-uppercase {
-    letter-spacing: 0.2em;
-  }
-  
-  .btn-warning{
-  
-    color: #fff;
-  }
-  
-  .btn-warning:hover{ 
-  
-    color: #fff;
-  }
-  
-  section {
-    background: #ffc115;
-    background: -webkit-linear-gradient(to right, #ffc115, #ffc115);
-    background: linear-gradient(to right, #ffc115, #ffc115);
-    color: #514B64;
-  }
+@import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+body {
+    background-color: #673AB7;
+    font-family: 'Calibri', sans-serif !important
+}
+
+.card {
+      position: relative;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background-color: rgb(245, 244, 244);
+   background-clip: border-box;
+   border: 0px solid transparent;
+   border-radius: 0px;
+}
+
+.card-body {
+   -webkit-box-flex: 1;
+   -ms-flex: 1 1 auto;
+   flex: 1 1 auto;
+   padding: 1.25rem;
+}
+
+.card .card-title {
+   position: relative;
+   font-weight: 600;
+   margin-bottom: 10px;
+   color:rgb(245, 244, 244);
+}
 
 
+.table {
+   width: 100%;
+   max-width: 100%;
+   margin-bottom: 1rem;
+   background-color: rgb(245, 244, 244);
+}
+
+* {
+   outline: none;
+}
+
+.table th, .table thead th {
+   font-weight: 500;
+}
+
+
+.table thead th {
+   vertical-align: bottom;
+   border-bottom: 2px solid #fcfcfc;
+   background-color: rgb(231, 151, 151);
+   color:rgb(245, 244, 244);
+}
+
+
+.table th {
+   padding: 1rem;
+   vertical-align: top;
+}
+
+
+.table th, .table thead th {
+   font-weight: 500;
+}
+
+
+th {
+   text-align: inherit;
+   background-color:rgb(231, 151, 151);
+}
 
 .cf{
     background-color: rgb(50, 84, 177);
@@ -184,6 +224,7 @@ html{
         #toggler:checked + .navbarMenu{
             display: block;
             line-height: 40px;
+            max-height: 1000%;
         }
     /* NAVBAR */
     /* MAIN */

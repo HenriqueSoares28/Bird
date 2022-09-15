@@ -87,7 +87,7 @@ html{
 /* NAVBAR */
 
 .c{
-    background-color: rgba(255, 255, 255, 0.989);
+    background-color: rgb(245, 244, 244);
 }
 
 body{
@@ -335,22 +335,23 @@ body{
 
 /* FOOTER */
 .footer {
-    height: 40px;
-    z-index: 999;
-    display: flex;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: rgb(245, 244, 244);
-    background-color: rgb(231, 151, 151);
-    align-items: middle;
-    flex-direction: column;
-    justify-content: space-between;
+	height: 40px;
+	z-index: 999;
+	display: flex;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: rgb(245, 244, 244);
+	background-color: rgb(231, 151, 151);
+	align-items: middle;
+	flex-direction: column;
+	justify-content: space-between;
 }
+
 .footer p {
-    margin: 4px 0px 4px 0px;
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
+	margin: 8px 0px 4px 0px;
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
 }
 /* FOOTER */
 
@@ -383,7 +384,6 @@ body{
         }
     /* NAVBAR */
     /* MAIN */
-
     /* MAIN */
     /* FOOTER */
         .footer {

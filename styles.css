@@ -91,6 +91,10 @@ html {
 	background-color: rgb(245, 244, 244);
 }
 
+.carrossel{
+	height: 590px;
+}
+
 .vitrine {
 	display: block;
 	margin: 50px auto;

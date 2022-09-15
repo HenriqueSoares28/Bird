@@ -66,11 +66,25 @@ html {
 	outline: 1px solid black;
 }
 
+.navbarLinks li{
+    width: 120px;
+}
+
+.navbarCarteira {
+	position: absolute;
+	top: 25px;
+	right: 120px;
+}
+
+.navbarCarteira a{
+	text-decoration: none;
+	color: inherit;
+}
+
 #toggler,
 .navbar label {
 	display: none;
 }
-
 /* NAVBAR */
 /* MAIN */
 .c {

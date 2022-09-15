@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TÍTULO DA ABA -->
+  <title>BIRD</title>
+  <!-- TÍTULO DA ABA -->
+  <link rel="icon" href="../img/logo.png">
+  <link href="bazar.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&family=Inter:wght@500&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-static-top justify-content-center">
+        <label for="toggler"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="toggler">
+        <div class="navbarMenu">
+          <ul class="navbarLinks">
+              <li><a href="bazar.html">Bazar</a></li>
+              <li><a href="sobre.html">Quem somos?</a></li>
+              <li><a href="../index.html"><img style="border-radius: 50%" src="../img/logo.png" height="65" width="65" class="navbarLogo"></a></li>
+              <li><a href="area.html">Minha área</a></li>
+              <li><a href="favoritos.html">Favoritos</a></li>
+            </ul>
+          <span class="navbarCarteira"><img src="../img/mod.png" height="35" width="35">0.00 <a href="birdcoin.html">+</a></li>
+        </div>
+    </nav>
+  </header>
+  <!-- NAVBAR -->
+
+  <!-- CONTEÚDO -->
+  <main>
+    <div class="c">
+
+<div class="filter">
+    <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="true" aria-controls="mobile-filter">Filters<span class="fa fa-filter pl-1"></span></button>
+</div>
+<!-- Sidebar filter section -->
+
+<section id="sidebar">
+    <div class="border-bottom pb-2 ml-2">
+        <h4 id="burgundy">Filtros</h4>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">Peças</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group">
+                <input type="checkbox" id="artisan">
+                <label for="artisan">Blusas de frio</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="breakfast">
+                <label for="breakfast">Bolsas e maletas</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="healthy">
+                <label for="healthy">Calças</label>
+            </div> 
+            <div class="form-group">
+                <input type="checkbox" id="artisan">
+                <label for="artisan">Calças sociais</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="breakfast">
+                <label for="breakfast">Camisas</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="healthy">
+                <label for="healthy">Camisetas</label>
+            </div> 
+            <div class="form-group">
+                <input type="checkbox" id="artisan">
+                <label for="artisan">Coletes</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="breakfast">
+                <label for="breakfast">Croppedes</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="healthy">
+                <label for="healthy">Jaquetas</label>
+            </div> 
+            <div class="form-group">
+                <input type="checkbox" id="artisan">
+                <label for="artisan">Macacões</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="breakfast">
+                <label for="breakfast">Regatas</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="healthy">
+                <label for="healthy">Roupas esportivas</label>
+            </div> 
+            <div class="form-group">
+                <input type="checkbox" id="artisan">
+                <label for="artisan">Saias</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="breakfast">
+                <label for="breakfast">Sapatos</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="healthy">
+                <label for="healthy">Shorts</label>
+            </div> 
+            <div class="form-group">
+                <input type="checkbox" id="artisan">
+                <label for="artisan">Ternos</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="breakfast">
+                <label for="breakfast">Vestidos casuais</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="healthy">
+                <label for="healthy">Vestidos de festa</label>
+            </div> 
+            <div class="form-group">
+                <input type="checkbox" id="healthy">
+                <label for="healthy">Vestidos de gala</label>
+            </div>   
+            <div class="form-group">
+                <input type="checkbox" id="healthy">
+                <label for="healthy">Outros</label>
+            </div>                                
+        </form>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">Tamanhos</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group">
+                <input type="checkbox" id="tea">
+                <label for="tea">PP e P</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="cookies">
+                <label for="cookies">M</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="pastries">
+                <label for="pastries">G e GG</label>
+            </div>                                
+            <div class="form-group">
+                <input type="checkbox" id="dough">
+                <label for="dough">XG e XGG</label>
+            </div>                                
+            <div class="form-group">
+                <input type="checkbox" id="choco">
+                <label for="choco">32 a 34</label>
+            </div> 
+            <div class="form-group">
+                <input type="checkbox" id="choco">
+                <label for="choco">35 e 36</label>
+            </div> 
+            <div class="form-group">
+                <input type="checkbox" id="choco">
+                <label for="choco">37 a 39</label>
+            </div>  
+            <div class="form-group">
+                <input type="checkbox" id="choco">
+                <label for="choco">40 a 42</label>
+            </div>   
+            <div class="form-group">
+                <input type="checkbox" id="choco">
+                <label for="choco">43 a 45</label>
+            </div>  
+            <div class="form-group">
+                <input type="checkbox" id="choco">
+                <label for="choco">46 a 48</label>
+            </div>                            
+        </form>
+    </div>
+    <div class="py-2 ml-3">
+        <h6 class="font-weight-bold">Localização</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group">
+                <input type="checkbox" id="25off">
+                <label for="25">Minha cidade</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="5off">
+                <label for="5off" id="off">Meu estado</label>
+            </div>                                           
+        </form>
+    </div>
+</section>
+<!-- products section -->
+<section id="products">
+
+    <div class="container bg-white">
+        <div class="row">
+            <div
+                class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                <div class="product">
+                    <img src="https://images.pexels.com/photos/54203/pexels-photo-54203.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                        <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                        <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                        <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                    </ul>
+                </div>
+                <div class="title pt-4 pb-1">Winter Sweater</div>
+                <div class="d-flex align-content-center justify-content-center">
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                </div>
+                <div class="price"><div class="dor"><img src="mod.png" class="card-img-top" alt="jaqueta"
+                    style="width: 40px; height: 35px">20</div></div>
+            </div>
+            <div
+                class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                <div class="product">
+                    <img src="https://images.pexels.com/photos/6764040/pexels-photo-6764040.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                        <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                        <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                        <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                    </ul>
+                </div>
+                <div class="title pt-4 pb-1">Denim Dresses</div>
+                <div class="d-flex align-content-center justify-content-center">
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                </div>
+                <div class="price"><div class="dor"><img src="mod.png" class="card-img-top" alt="jaqueta"
+                    style="width: 40px; height: 35px">20</div></div>
+            </div>
+            <div
+                class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                <div class="product">
+                    <img src="https://images.pexels.com/photos/914668/pexels-photo-914668.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                        <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                        <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                        <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                    </ul>
+                </div>
+                <div class="title pt-4 pb-1"> Empire Waist Dresses</div>
+                <div class="d-flex align-content-center justify-content-center">
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                </div>
+                <div class="price"><div class="dor"><img src="mod.png" class="card-img-top" alt="jaqueta"
+                    style="width: 40px; height: 35px">20</div></div>
+            </div>
+            <div
+                class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                <div class="product">
+                    <img src="https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                        <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                        <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                        <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                    </ul>
+                </div>
+                <div class="title pt-4 pb-1">Pinafore Dresses</div>
+                <div class="d-flex align-content-center justify-content-center">
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                </div>
+                <div class="price"><div class="dor"><img src="mod.png" class="card-img-top" alt="jaqueta"
+                    style="width: 40px; height: 35px">20</div></div>
+            </div>
+        </div>
+        <div class="row">
+            <div
+                class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                <div class="product">
+                    <img src="https://images.pexels.com/photos/54203/pexels-photo-54203.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                        <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                        <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                        <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                    </ul>
+                </div>
+                <div class="title pt-4 pb-1">Winter Sweater</div>
+                <div class="d-flex align-content-center justify-content-center">
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                </div>
+                <div class="price"><div class="dor"><img src="mod.png" class="card-img-top" alt="jaqueta"
+                    style="width: 40px; height: 35px">20</div></div>
+            </div>
+            <div
+                class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                <div class="product">
+                    <img src="https://images.pexels.com/photos/6764040/pexels-photo-6764040.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                        <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                        <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                        <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                    </ul>
+                </div>
+                <div class="title pt-4 pb-1">Denim Dresses</div>
+                <div class="d-flex align-content-center justify-content-center">
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                </div>
+                <div class="price"><div class="dor"><img src="mod.png" class="card-img-top" alt="jaqueta"
+                    style="width: 40px; height: 35px">20</div></div>
+            </div>
+            <div
+                class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                <div class="product">
+                    <img src="https://images.pexels.com/photos/914668/pexels-photo-914668.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                        <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                        <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                        <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                    </ul>
+                </div>
+                <div class="title pt-4 pb-1"> Empire Waist Dresses</div>
+                <div class="d-flex align-content-center justify-content-center">
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                </div>
+                <div class="price"><div class="dor"><img src="mod.png" class="card-img-top" alt="jaqueta"
+                    style="width: 40px; height: 35px">20</div></div>
+            </div>
+            <div
+                class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                <div class="product">
+                    <img src="https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                        <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                        <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                        <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                    </ul>
+                </div>
+                <div class="title pt-4 pb-1">Pinafore Dresses</div>
+                <div class="d-flex align-content-center justify-content-center">
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                </div>
+                <div class="price"><div class="dor"><img src="mod.png" class="card-img-top" alt="jaqueta"
+                    style="width: 40px; height: 35px">20</div></div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+    </div>
+
+  </main>
+  <!-- CONTEÚDO -->
+
+  <!-- RODAPÉ -->
+  <footer class="text-center align-middle footer">
+    <p>© 2022 Copyright: TRABALHO INTERDISCIPLINAR - BANCO DE DADOS</p>
+  </footer>
+  <!-- RODAPÉ -->
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b0cf06f2b4.js" crossorigin="anonymous"></script>
+  <!-- SCRIPTS -->
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TÍTULO DA ABA -->
+  <title>BIRD</title>
+  <!-- TÍTULO DA ABA -->
+  <link rel="icon" href="../img/logo.png">
+  <link href="produto.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&family=Inter:wght@500&family=Poppins:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-static-top justify-content-center">
+        <label for="toggler"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="toggler">
+        <div class="navbarMenu">
+          <ul class="navbarLinks">
+              <li><a href="bazar.html">Bazar</a></li>
+              <li><a href="sobre.html">Quem somos?</a></li>
+              <li><a href="../index.html"><img style="border-radius: 50%" src="../img/logo.png" height="65" width="65" class="navbarLogo"></a></li>
+              <li><a href="area.html">Minha área</a></li>
+              <li><a href="favoritos.html">Favoritos</a></li>
+            </ul>
+          <span class="navbarCarteira"><img src="../img/mod.png" height="35" width="35">0.00 <a href="birdcoin.html">+</a></li>
+        </div>
+    </nav>
+  </header>
+  <!-- NAVBAR -->
+
+  <!-- CONTEÚDO -->
+  <main>
+    <section>
+    </section>
+    <div class="c">
+
+
+        <div class="container mt-5 mb-5">	
+         <div class="card">	
+            <div class="row g-0">	
+                <div class="col-md-6 border-end">	
+                    <div class="d-flex flex-column justify-content-center">	<div class="main_image">	
+                        
+                        
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <style>
+                        * {box-sizing: border-box;}
+                        
+                        .img-magnifier-container {
+                          position:relative;
+                          border: 0;
+                        }
+                        
+                        .img-magnifier-glass {
+                          position: absolute;
+                          border: 2px solid #000;
+                          border-radius: 50%;
+                          cursor: none;
+                          /*Set the size of the magnifier glass:*/
+                          width: 100px;
+                          height: 100px;
+                        }
+                        </style>
+                        <script>
+                        function magnify(imgID, zoom) {
+                          var img, glass, w, h, bw;
+                          img = document.getElementById(imgID);
+                          /*create magnifier glass:*/
+                          glass = document.createElement("DIV");
+                          glass.setAttribute("class", "img-magnifier-glass");
+                          /*insert magnifier glass:*/
+                          img.parentElement.insertBefore(glass, img);
+                          /*set background properties for the magnifier glass:*/
+                          glass.style.backgroundImage = "url('" + img.src + "')";
+                          glass.style.backgroundRepeat = "no-repeat";
+                          glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+                          bw = 3;
+                          w = glass.offsetWidth / 2;
+                          h = glass.offsetHeight / 2;
+                          /*execute a function when someone moves the magnifier glass over the image:*/
+                          glass.addEventListener("mousemove", moveMagnifier);
+                          img.addEventListener("mousemove", moveMagnifier);
+                          /*and also for touch screens:*/
+                          glass.addEventListener("touchmove", moveMagnifier);
+                          img.addEventListener("touchmove", moveMagnifier);
+                          function moveMagnifier(e) {
+                            var pos, x, y;
+                            /*prevent any other actions that may occur when moving over the image*/
+                            e.preventDefault();
+                            /*get the cursor's x and y positions:*/
+                            pos = getCursorPos(e);
+                            x = pos.x;
+                            y = pos.y;
+                            /*prevent the magnifier glass from being positioned outside the image:*/
+                            if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+                            if (x < w / zoom) {x = w / zoom;}
+                            if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+                            if (y < h / zoom) {y = h / zoom;}
+                            /*set the position of the magnifier glass:*/
+                            glass.style.left = (x - w) + "px";
+                            glass.style.top = (y - h) + "px";
+                            /*display what the magnifier glass "sees":*/
+                            glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+                          }
+                          function getCursorPos(e) {
+                            var a, x = 0, y = 0;
+                            e = e || window.event;
+                            /*get the x and y positions of the image:*/
+                            a = img.getBoundingClientRect();
+                            /*calculate the cursor's x and y coordinates, relative to the image:*/
+                            x = e.pageX - a.left;
+                            y = e.pageY - a.top;
+                            /*consider any page scrolling:*/
+                            x = x - window.pageXOffset;
+                            y = y - window.pageYOffset;
+                            return {x : x, y : y};
+                          }
+                        }
+                        </script>
+                        </head>
+                        <body>
+                        
+                        <div class="img-magnifier-container">
+                          <img id="myimage" src="blusa.webp" width="600" height="400">
+                        </div>
+                        
+                        <script>
+                        /* Initiate Magnify Function
+                        with the id of the image, and the strength of the magnifier glass:*/
+                        magnify("myimage", 3);
+                        </script>
+
+
+
+                    </div>	
+                    	</div>	</div>	<div class="col-md-6">	<div class="p-3 right-side">	
+                            <div class="d-flex justify-content-between align-items-center">	
+                                <h3>Camiseta</h3>	<span class="heart"><i class='bx bx-heart'></i></span>
+                    	</div>	
+                        <div class="mt-2 pr-3 content">	
+                            <p> Tamanho G</p>	</div>	
+                            <h3><div class="dor"><img src="../img/mod.png" class="card-img-top" alt="jaqueta"
+                                style="width: 40px; height: 35px">20</div></h3>	
+                            <div class="ratings d-flex flex-row align-items-center">	
+                                <div class="d-flex flex-row">	<i class='bx bxs-star' ></i>	
+                                    <i class='bx bxs-star' ></i>	<i class='bx bxs-star' > vendido por</i>	
+                                    <i class='bx bxs-star' ></i>	<i class='bx bx-star' ></i>	</div>	</div>	
+
+                                  
+
+
+                                <div class="buttons d-flex flex-row mt-5 gap-3">	
+                                    <button class="btn btn-outline-dark">Comprar</button>	
+                                    <div class="search-option">	
+                                        <i class='bx bx-search-alt-2 first-search'></i>	<div class="inputs">	
+                                            <input type="text" name="">	</div>	<i class='bx bx-share-alt share'></i>
+                                    </div></div>	</div>	</div>	</div>	</div> </div>
+
+
+    </div>
+    </div>
+
+  </main>
+  <!-- CONTEÚDO -->
+
+  <!-- RODAPÉ -->
+  <footer class="text-center align-middle footer">
+    <p>© 2022 Copyright: TRABALHO INTERDISCIPLINAR - BANCO DE DADOS</p>
+  </footer>
+  <!-- RODAPÉ -->
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b0cf06f2b4.js" crossorigin="anonymous"></script>
+  <!-- SCRIPTS -->
+</body>
+
+</html>

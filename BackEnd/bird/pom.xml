@@ -5,10 +5,18 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bird</name>
 	<dependencies>
+
+		<dependency>
+			<groupId>com.microsoft.azure</groupId>
+			<artifactId>spring-integration-azure</artifactId>
+			<version>1.2.7</version>
+			<type>pom</type>
+		</dependency>
+
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<version>42.5.0</version>
-		</dependency>
+			<version>42.4.1</version>
+		</dependency>		
 	</dependencies>
 </project>

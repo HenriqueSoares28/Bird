@@ -21,26 +21,39 @@
             <div>
                 <div class="modal-body">
                     <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
+                        <br>
                         <h3 style="font-size: large; color: white;" class="text-center">Novo Usuário</h3><br>
                         <div class="form-group">
                             <h1 style="font-size: medium; color: white;">Usuário</h1>
-                            <input type="text" name="txt_login" id="txt_login" class="form-control">
+                            <input type="text" name="txt_login" id="txt_login" placeholder="fulanosilva" class="form-control">
                         </div>
                         <div class="form-group">
                             <h1 style="font-size: medium; color: white;">Nome Completo</h1>
-                            <input type="text" name="txt_nome" id="txt_nome" class="form-control">
+                            <input type="text" name="txt_nome" id="txt_nome" placeholder="Fulano da Silva" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <h1 style="font-size: medium; color: white;">CPF</h1>
+                            <input type="text" oninput="cpf_mask(this)" name="txt_cpf" placeholder="123.456.789-00" maxlength="11" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <h1 style="font-size: medium; color: white;">CEP</h1>
+                            <input type="text" oninput="cep_mask(this)" name="txt_cep" placeholder="12345-000" maxlength="11" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <h1 style="font-size: medium; color: white;">Endereço</h1>
+                            <input type="text" name="txt_nome" id="txt_nome" placeholder="Rua dos Fulanos, 123" class="form-control">
                         </div>
                         <div class="form-group">
                             <h1 style="font-size: medium; color: white;">E-mail</h1>
-                            <input type="text" name="txt_email" id="txt_email" class="form-control">
+                            <input type="text" name="txt_email" id="txt_email" placeholder="fulano.silva@email.com" class="form-control">
                         </div>
                         <div class="form-group">
                             <h1 style="font-size: medium; color: white;">Senha</h1>
-                            <input type="password" name="txt_senha" id="txt_senha" class="form-control">
+                            <input type="password" name="txt_senha" id="txt_senha" placeholder="************" class="form-control">
                         </div>
                         <div class="form-group">
                             <h1 style="font-size: medium; color: white;">Confirmar Senha</h1>
-                            <input type="password" name="txt_senha2" id="txt_senha2" class="form-control">
+                            <input type="password" name="txt_senha2" id="txt_senha2" placeholder="************" class="form-control">
                         </div>
                     </form>
                 </div>

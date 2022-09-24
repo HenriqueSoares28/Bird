@@ -43,6 +43,10 @@ form input {
     width: 325px;
 }
 
+input.form-control::placeholder{
+    opacity: 65%;
+}
+
 .form-group {
     padding-top: 14px;
     padding-bottom: 14px;

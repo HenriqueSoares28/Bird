@@ -84,11 +84,11 @@ html {
 /* NAVBAR */
 /* MAIN */
 .c {
-	background-color: rgb(245, 244, 244);
+	background-color: #f5f4f4;
 }
 
-.carrossel{
-	height: 590px;
+.carousel{
+	max-height: 590px;
 }
 
 .vitrine {
@@ -253,7 +253,6 @@ ins {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
-
 /* MAIN */
 /* FOOTER */
 .footer {
@@ -308,6 +307,9 @@ ins {
 	}
 
 	/* NAVBAR */
+	/* MAIN */
+	
+	/* MAIN */
 	/* FOOTER */
 	.footer {
 		background-color: rgb(231, 151, 151);
@@ -316,7 +318,6 @@ ins {
 	.footer p {
 		font-size: 12px;
 	}
-
 	/* FOOTER */
 }
 

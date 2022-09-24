@@ -1,14 +1,18 @@
+html {
+    min-height: 100%;
+}
+
 body {
     font-family: "Lato", sans-serif;
 }
 
 main {
-    background-image: url(../img/cabelo.png);
+    background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     inset: 0 0 0 0;
 }
 
@@ -17,7 +21,7 @@ aside {
     box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.366);
     backdrop-filter: blur(1rem);
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     height: auto;
     max-width: 400px;
     position: relative;

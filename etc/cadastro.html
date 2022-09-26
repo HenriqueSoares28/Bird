@@ -27,21 +27,35 @@
                             <h1 style="font-size: medium; color: white;">Usuário</h1>
                             <input type="text" name="txt_login" id="txt_login" placeholder="fulanosilva" class="form-control">
                         </div>
-                        <div class="form-group">
-                            <h1 style="font-size: medium; color: white;">Nome Completo</h1>
-                            <input type="text" name="txt_nome" id="txt_nome" placeholder="Fulano da Silva" class="form-control">
+                        <div class="duplo">
+                            <div class="form-group">
+                                <h1 style="font-size: medium; color: white;">Nome</h1>
+                                <input type="text" name="txt_nome" id="txt_nome" placeholder="Fulano" class="form-control">
+                            </div>
+                            &nbsp;
+                            <div class="form-group">
+                                <h1 style="font-size: medium; color: white;">Sobrenome</h1>
+                                <input type="text" name="txt_sobrenome" id="txt_sobrenome" placeholder="da Silva" class="form-control">
+                            </div>
                         </div>
                         <div class="form-group">
                             <h1 style="font-size: medium; color: white;">CPF</h1>
-                            <input type="text" oninput="cpf_mask(this)" name="txt_cpf" placeholder="123.456.789-00" maxlength="11" class="form-control">
+                            <input type="text" oninput="cpf_mask(this)" name="txt_cpf" id="txt_cpf" placeholder="123.456.789-00" maxlength="11" class="form-control">
                         </div>
                         <div class="form-group">
                             <h1 style="font-size: medium; color: white;">CEP</h1>
-                            <input type="text" oninput="cep_mask(this)" name="txt_cep" placeholder="12345-000" maxlength="11" class="form-control">
+                            <input type="text" oninput="cep_mask(this)" name="txt_cep" id="txt_cep"placeholder="12345-000" maxlength="11" class="form-control">
                         </div>
-                        <div class="form-group">
-                            <h1 style="font-size: medium; color: white;">Endereço</h1>
-                            <input type="text" name="txt_nome" id="txt_nome" placeholder="Rua dos Fulanos, 123" class="form-control">
+                        <div class="duplo">
+                            <div class="form-group">
+                                <h1 style="font-size: medium; color: white;">Complemento</h1>
+                                <input type="text" name="txt_complemento" id="txt_complemento" placeholder="(Opcional)" class="form-control">
+                            </div>
+                            &nbsp;
+                            <div class="form-group">
+                                <h1 style="font-size: medium; color: white;">Número</h1>
+                                <input type="text" name="txt_numcasa" id="txt_numcasa" placeholder="123" class="form-control">
+                            </div>
                         </div>
                         <div class="form-group">
                             <h1 style="font-size: medium; color: white;">E-mail</h1>

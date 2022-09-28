@@ -24,6 +24,10 @@ html{
     margin: 0;
     background-color: rgb(245, 244, 244);
 }
+
+body {
+	padding-top: 82px;
+}
 /* GERAL */
 /* NAVBAR */
 .navbar {
@@ -163,6 +167,9 @@ html{
 
 /* RESPONSIVIDADE */
 @media screen and (max-width: 600px) {
+  body {
+		padding-top: 0px;
+	}
     /* NAVBAR */
         .navbarMenu{
             width: 100%;

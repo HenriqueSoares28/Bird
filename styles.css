@@ -24,6 +24,9 @@ html {
 	background-color: rgb(245, 244, 244);
 }
 
+body {
+	padding-top: 82px;
+}
 /* GERAL */
 /* NAVBAR */
 .navbar {
@@ -65,18 +68,6 @@ html {
 .navbarLinks li{
     width: 120px;
 }
-
-.navbarCarteira {
-	position: absolute;
-	top: 25px;
-	right: 120px;
-}
-
-.navbarCarteira a{
-	text-decoration: none;
-	color: inherit;
-}
-
 #toggler,
 .navbar label {
 	display: none;
@@ -278,7 +269,9 @@ ins {
 /* FOOTER */
 /* RESPONSIVIDADE */
 @media screen and (max-width: 600px) {
-
+	body {
+		padding-top: 0px;
+	}
 	/* NAVBAR */
 	.navbarMenu {
 		width: 100%;

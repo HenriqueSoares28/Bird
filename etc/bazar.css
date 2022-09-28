@@ -30,6 +30,9 @@ section {
     background-color: white;
 }
 
+body {
+	padding-top: 82px;
+}
 /* GERAL */
 /* NAVBAR */
 .navbar {
@@ -512,6 +515,9 @@ h6{
 
 /* RESPONSIVIDADE */
 @media screen and (max-width: 600px) {
+    body {
+		padding-top: 0px;
+	}
     /* NAVBAR */
         .navbarMenu{
             width: 100%;
